@@ -1,0 +1,84 @@
+<h3>Login</h3>
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgba(218, 40, 70, 0.493);  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 100px 500px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head>    
+<body>    
+    
+    <form>  
+<div class="login">
+
+    <form #taskForm1="ngForm" (ngSubmit)="check(taskForm1.value)">
+
+      <div class="form-group">
+
+        <label for="validationDefault01">name<span>*</span></label>
+
+      <input type="text" class="form-control" id="Name" name="Name"  required ngModel />
+
+      </div>
+
+   
+
+      <div class="form-group">
+
+        <label for="validationDefault02">Password<span>*</span></label>
+
+        <input type="Password" class="form-control" id="Password" name="Password"  required ngModel />
+
+      </div>
+
+      <button type="submit" class="btn btn-success">Login</button>
+
+     <button type="reset" class="btn btn-success">reset</button>
+
+     
+
+    </form>
+
+</div>
+
+</form>     
+</body>     
+</html>  
